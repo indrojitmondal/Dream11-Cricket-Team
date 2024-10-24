@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header className='w-11/12 mx-auto pt-4'>
-             <h1 className='text-xl font-bold'>Welcome to Assignment7</h1>
+             <h1 className='text-xl font-bold'>Welcome Dream11 Cricket Team</h1>
              <button className='btn'>Lets Start</button>
       </header>
     </>
