@@ -1,7 +1,7 @@
 import React from 'react';
 import './Banner.css'
 
-const Banner = () => {
+const Banner = ({handleCoin}) => {
     return (
         <div>
 
@@ -20,7 +20,11 @@ const Banner = () => {
                         <p className="mb-5 text-2xl">
                         Beyond Boundaries Beyond Limits
                         </p>
-                        <button className="bg-credit text-black px-4 py-2 rounded-xl">Claim Free Credit</button>
+                        <button 
+                         onClick={()=>{
+                            handleCoin(1500000);
+                         }}
+                         className="bg-credit text-black px-4 py-2 rounded-xl">Claim Free Credit</button>
                     </div>
                 </div>
             </div>

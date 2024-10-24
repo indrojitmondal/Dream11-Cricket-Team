@@ -8,9 +8,14 @@ import Available from './components/Available/Available'
 import Selected from './components/Selected/Selected'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [coin, setCoin] = useState(0);
   const [available, setAvailable] = useState(true);
   const [selected, setSelected] = useState(false);
+
+  const handleCoin = (x)=>{
+    setCoin(coin+x);
+    console.log('Add coin:',x);
+  }
 
   const handleIsAvailable = status => {
     if (status) {
@@ -33,18 +38,18 @@ function App() {
       <header className='w-11/12 mx-auto pt-4'>
 
         <div className='fixed w-11/12 mx-auto pt-4 pb-4 top-0 z-50 bg-white'>
-          <Navbar  ></Navbar>
+          <Navbar coin={coin}></Navbar>
         </div>
 
 
-        <Banner></Banner>
+        <Banner handleCoin={handleCoin}></Banner>
       </header>
       <main className='w-11/12 mx-auto pt-12'>
 
         <div className='flex justify-between items-center'>
           <div>
             {
-              available ? <h2>Available Players</h2> : <h2>Selected Players</h2>
+              available ? <h2 className='text-2xl font-bold'>Available Players</h2> : <h2 className='text-2xl font-bold'>Selected Players</h2>
             }
           </div>
 

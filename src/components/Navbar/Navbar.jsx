@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
+    
     return (
-        <div className='flex justify-between sticky top-3 bg-white z-40'>
+        <div className='flex justify-between '>
 
             <div className="">
                 <img className='w-[70px] h-[60px]' src="https://i.ibb.co.com/tCDBHJ3/logo.png" alt="" />
@@ -18,7 +19,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='flex items-center gap-4 border border-gray-200 rounded-xl px-4 py-2'>
-                    <p className='font-semibold'>0 Coin</p>
+                    <p className='font-semibold'>{coin} Coin</p>
                     <img src="https://i.ibb.co.com/86822T7/coin.png" alt="" />
                 </div>
             </menu>
