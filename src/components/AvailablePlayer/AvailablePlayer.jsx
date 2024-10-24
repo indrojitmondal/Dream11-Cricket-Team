@@ -1,4 +1,7 @@
 import React from 'react';
+import { CiFlag1 } from "react-icons/ci";
+import { FaFlag } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
 
 const AvailablePlayer = ({player}) => {
     const {player_img,name,role,batting_type,bowling_type,price}=player;
@@ -8,8 +11,12 @@ const AvailablePlayer = ({player}) => {
                <img className='w-full bg-player rounded-xl' src={player_img} alt="" />
             </div>
             
-            <h3 className='font-semibold text-xl'>{name}</h3>
-            <p className='flex justify-between'> <h3>India</h3>
+            <p className='flex items-center gap-2'>
+              <CgProfile />
+              <h3 className='font-semibold text-xl'> {name}</h3>
+            </p>
+              
+            <p className='flex justify-between'> <h3 className='flex items-center gap-2 '> <FaFlag className='' /> India</h3>
                 <span>{role}</span>
             </p>
             <h4 className='font-bold'>Rating</h4>
@@ -17,8 +24,15 @@ const AvailablePlayer = ({player}) => {
                 <h5>{batting_type}</h5>
                 <h5>{bowling_type}</h5>
             </p>
-            <p className='flex justify-between'>
-                <h5 className='font-semibold'>{price}</h5>
+            <p className='flex justify-between items-center'>
+            
+
+
+                  
+
+                  <h5 className='font-semibold'>Price: ${price}</h5>
+                
+                
                 <button className='btn'>Choose Player</button>
             </p>
 
