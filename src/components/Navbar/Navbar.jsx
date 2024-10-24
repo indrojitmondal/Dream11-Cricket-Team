@@ -17,7 +17,7 @@ const Navbar = () => {
 
                 </div>
 
-                <div className='flex items-center gap-4'>
+                <div className='flex items-center gap-4 border border-gray-200 rounded-xl px-4 py-2'>
                     <p className='font-semibold'>0 Coin</p>
                     <img src="../../../src/assets/coin.png" alt="" />
                 </div>
