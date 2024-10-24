@@ -58,7 +58,7 @@ function App() {
               onClick={() => {
                 handleIsAvailable(true);
               }}
-              className='btn'>Available</button>
+              className={`border border-gray-200 px-6 py-3 rounded-xl ${available? 'bg-credit': 'bg-white'}`}>Available</button>
             <button
 
               onClick={() => {
@@ -66,13 +66,14 @@ function App() {
               }}
 
 
-              className='btn'>Selected(0)</button>
+              className={`border border-gray-200 px-6 py-3 rounded-xl ${selected? 'bg-credit': 'bg-white'}`}>Selected(0)</button>
           </div>
         </div>
-
+        <div className='mt-4'>
         {
           available ? <Available></Available> : <Selected></Selected>
         }
+        </div>
 
       </main>
     </>
