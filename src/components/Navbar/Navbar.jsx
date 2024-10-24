@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between'>
+        <div className='flex justify-between sticky top-3 bg-white z-40'>
 
             <div className="">
                 <img className='w-[70px] h-[60px]' src="https://i.ibb.co.com/tCDBHJ3/logo.png" alt="" />
