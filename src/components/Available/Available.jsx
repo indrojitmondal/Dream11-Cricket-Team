@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import AvailablePlayer from '../AvailablePlayer/AvailablePlayer';
 
 const Available = () => {
+    const [availableData, setAvailableData]= useState([]);
+    useEffect(()=>{
+        fetch('availablePlayersData.json')
+        .then(res => res.json())
+        .then (data => setAvailableData(data));
+
+    },[])
     return (
-        <div>
+        <div className='grid grid-cols-3 gap-5'>
+
+            {/* <h3>{availableData.length}</h3> */}
+            {
+                availableData.map( player => <AvailablePlayer player={player} ></AvailablePlayer>)
+            }
             
         </div>
     );

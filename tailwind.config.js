@@ -10,6 +10,9 @@ export default {
         
         credit: 'rgb(231, 254, 41)',
        
+
+        player: 'rgb(217, 217, 217)',
+       
        
         
 
