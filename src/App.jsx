@@ -22,6 +22,7 @@ function App() {
         
         // console.log('Hello...');
         
+        // player.selected_status=true;
         
         // console.log('Player id:',player.player_id);
         const newS= [...selectedPlayers];

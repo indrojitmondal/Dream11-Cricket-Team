@@ -86,13 +86,15 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
                 <h5 className='font-semibold'>Price: ${price}</h5>
                 <button
                  onClick={
+
+
                     
-                    coin >=player.price && !player.selected_status && selectedPlayers.length<6?()=>{
+                    coin >=player.price &&(selectedPlayers.find( x=> x.player_id ==player.player_id)==undefined ) && selectedPlayers.length<6?()=>{
                     handleSelectedPlayers(player);
                     // console.log('Selected: ',selectedPlayers.length);
-                    player.selected_status=true;
+                    // player.selected_status=true;
                     handleReduceCoin(player.price);
-                    } : player.selected_status? 
+                    } : (selectedPlayers.find( x=> x.player_id ==player.player_id)!=undefined ) ? 
                     ()=>  allReadySelected() : selectedPlayers.length>=6? ()=>allPlayerSelected():
                      ()=>  addCoin()
 
