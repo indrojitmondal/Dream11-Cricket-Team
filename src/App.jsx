@@ -8,6 +8,9 @@ import Banner from './components/Banner/Banner'
 import Available from './components/Available/Available'
 import Selected from './components/Selected/Selected'
 import Footer from './components/Footer/Footer'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   const [coin, setCoin] = useState(0);
@@ -125,6 +128,8 @@ function App() {
       </main>
 
       <Footer></Footer>
+
+      <ToastContainer />
 
       
 

@@ -1,7 +1,19 @@
 import React from 'react';
 import './Banner.css'
-
+import { toast } from 'react-toastify';
 const Banner = ({handleCoin}) => {
+
+    const credited = (x) => {
+        toast.success(`Success! $${x}  is added`, {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      };
     return (
         <div>
 
@@ -24,6 +36,7 @@ const Banner = ({handleCoin}) => {
                          onClick={()=>{
                             handleCoin(1500000);
                             // alert(`Added 1500000`);
+                            // credited(1500000);
                          }}
                          className="bg-credit text-black px-4 py-2 rounded-xl">Claim Free Credit</button>
                     </div>
