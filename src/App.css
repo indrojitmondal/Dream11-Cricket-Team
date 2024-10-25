@@ -1,0 +1,15 @@
+.gradient-button {
+  background: linear-gradient(to right, #E28BAC, #F9C759);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.footer_upper{
+   background: url(https://i.ibb.co.com/Yd86kpj/bg-shadow.png);
+   background-size: cover;
+   background-position: center;
+   
+}

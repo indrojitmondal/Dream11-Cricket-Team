@@ -6,15 +6,16 @@ import Navbar from './components/Navbar/Navbar'
 import Banner from './components/Banner/Banner'
 import Available from './components/Available/Available'
 import Selected from './components/Selected/Selected'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [coin, setCoin] = useState(0);
   const [available, setAvailable] = useState(true);
   const [selected, setSelected] = useState(false);
 
-  const handleCoin = (x)=>{
-    setCoin(coin+x);
-    console.log('Add coin:',x);
+  const handleCoin = (x) => {
+    setCoin(coin + x);
+    console.log('Add coin:', x);
   }
 
   const handleIsAvailable = status => {
@@ -58,7 +59,7 @@ function App() {
               onClick={() => {
                 handleIsAvailable(true);
               }}
-              className={`border border-gray-200 px-6 py-3 rounded-xl ${available? 'bg-credit': 'bg-white'}`}>Available</button>
+              className={`border border-gray-200 px-6 py-3 rounded-xl ${available ? 'bg-credit' : 'bg-white'}`}>Available</button>
             <button
 
               onClick={() => {
@@ -66,16 +67,26 @@ function App() {
               }}
 
 
-              className={`border border-gray-200 px-6 py-3 rounded-xl ${selected? 'bg-credit': 'bg-white'}`}>Selected(0)</button>
+              className={`border border-gray-200 px-6 py-3 rounded-xl ${selected ? 'bg-credit' : 'bg-white'}`}>Selected(0)</button>
           </div>
         </div>
         <div className='mt-4'>
-        {
-          available ? <Available></Available> : <Selected></Selected>
-        }
+          {
+            available ? <Available></Available> : <Selected></Selected>
+          }
         </div>
 
       </main>
+
+      <Footer></Footer>
+
+      
+
+
+
+
+
+
     </>
   )
 }

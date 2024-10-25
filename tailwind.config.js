@@ -12,6 +12,9 @@ export default {
        
 
         player: 'rgb(217, 217, 217)',
+        subscriber: 'rgba(19, 19, 19, 0.3)',
+        b1:'rgb(255, 255, 255)',
+        b2: 'rgba(19, 19, 19, 0.1)',
        
        
         
