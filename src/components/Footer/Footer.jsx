@@ -5,7 +5,7 @@ const Footer = () => {
         <>
             <footer className="mt-20 relative ">
                 {/* Upper section */}
-                <div className="upper absolute z-50 footer_upper w-11/12 mx-auto top-0 left-0 right-0  p-4 rounded-3xl bg-white shadow-lg ">
+                <div className="upper absolute z-50 footer_upper w-11/12 mx-auto top-0 left-0 right-0  p-16  bg-white shadow-lg ">
                     <div className="p-4 border border-b2  rounded-3xl text-center space-y-3">
                         <h6 className="text-3xl font-bold">Subscribe to our Newsletter</h6>
                         <p className="text-xl font-medium">Get the latest updates and news right in your inbox!</p>
@@ -19,7 +19,7 @@ const Footer = () => {
                 {/* Downer section */}
 
                 <div className="downer  top-28 absolute z-20 bg-black w-full">
-                    <div className="text-white bg-white pt-[88px]   w-11/12 mx-auto">
+                    <div className="text-white bg-white pt-[185px]   w-11/12 mx-auto">
                         {/* start from here */}
                         <div className='text-white pt-4 bg-black'>
 

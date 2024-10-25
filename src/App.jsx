@@ -13,6 +13,19 @@ function App() {
   const [coin, setCoin] = useState(0);
   const [available, setAvailable] = useState(true);
   const [selected, setSelected] = useState(false);
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
+    const handleSelectedPlayers = (player)=>{
+
+        
+        console.log('Hello...');
+        const newSelectedPlayers= [...selectedPlayers, player];
+        setSelectedPlayers(newSelectedPlayers);
+      
+
+    }
+  
+
+  
 
   const handleCoin = (x) => {
     setCoin(coin + x);
@@ -73,7 +86,7 @@ function App() {
         </div>
         <div className='mt-4'>
           {
-            available ? <Available></Available> : <Selected></Selected>
+            available ? <Available handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected selectedPlayers={selectedPlayers}></Selected>
           }
         </div>
 

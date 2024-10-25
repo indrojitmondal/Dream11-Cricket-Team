@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CiFlag1 } from "react-icons/ci";
 import { FaFlag } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 
-const AvailablePlayer = ({player}) => {
+const AvailablePlayer = ({player,handleSelectedPlayers}) => {
+    
+
+
     const {player_img, name, role, batting_type, bowling_type, price} = player;
     return (
         <div className='border border-gray-200 rounded-xl p-5'>
@@ -30,7 +33,11 @@ const AvailablePlayer = ({player}) => {
             
             <div className='flex justify-between items-center'>
                 <h5 className='font-semibold'>Price: ${price}</h5>
-                <button className='btn'>Choose Player</button>
+                <button
+                 onClick={()=>{
+                    handleSelectedPlayers(player);
+                 }} 
+                 className='btn'>Choose Player</button>
             </div>
         </div>
     );
