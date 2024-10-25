@@ -18,7 +18,7 @@ const Available = ({handleSelectedPlayers,coin, handleReduceCoin,selectedPlayers
         });
 
     },[])
-    console.log('Copy data:', availableCopyData);
+    // console.log('Copy data:', availableCopyData);
    
     return (
         <div className='grid grid-cols-3 gap-5'>

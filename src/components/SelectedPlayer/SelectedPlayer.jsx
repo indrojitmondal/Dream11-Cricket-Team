@@ -2,7 +2,7 @@ import React from 'react';
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const SelectedPlayer = ({ player,handleRemovedPlayers }) => {
-    console.log('Ok:', player);
+    // console.log('Ok:', player);
     const { player_img, name, role, price,batting_type,bowling_type } = player;
     return (
         <div className=' flex justify-between   border border-gray-200 rounded-xl p-5'>

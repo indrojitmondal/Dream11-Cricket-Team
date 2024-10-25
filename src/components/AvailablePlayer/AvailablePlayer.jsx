@@ -89,7 +89,7 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
                     
                     coin >=player.price && !player.selected_status && selectedPlayers.length<6?()=>{
                     handleSelectedPlayers(player);
-                    console.log('Selected: ',selectedPlayers.length);
+                    // console.log('Selected: ',selectedPlayers.length);
                     player.selected_status=true;
                     handleReduceCoin(player.price);
                     } : player.selected_status? 

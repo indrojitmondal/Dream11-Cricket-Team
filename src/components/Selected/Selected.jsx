@@ -2,7 +2,7 @@ import React from 'react';
 import SelectedPlayer from '../SelectedPlayer/SelectedPlayer';
 
 const Selected = ({selectedPlayers,handleRemovedPlayers}) => {
-    console.log(selectedPlayers);
+    // console.log(selectedPlayers);
     // for (const player of selectedPlayers) {
 
     //     console.log(player);

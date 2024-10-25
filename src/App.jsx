@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -20,19 +20,41 @@ function App() {
     const handleSelectedPlayers = (player)=>{
 
         
-        console.log('Hello...');
+        // console.log('Hello...');
+        
+        
+        // console.log('Player id:',player.player_id);
+        const newS= [...selectedPlayers];
+        const check= newS.find( x=> x.player_id ==player.player_id);
         const newSelectedPlayers= [...selectedPlayers, player];
-        setSelectedPlayers(newSelectedPlayers);
+        console.log(newS);
+        console.log('check:',check);
+        if(check==undefined){
+          console.log('Yes, done');
+          setSelectedPlayers(newSelectedPlayers);
+        }
+        
       
 
     }
+    // useEffect( ()=>{
+
+    //   const players= [...selectedPlayers];
+        
+    //   console.log('Length:',players.length);
+    //   const newSelectedPlayers= [...selectedPlayers];
+    //     // setSelectedPlayers(newSelectedPlayers);
+
+
+
+    // },[selectedPlayers])
 
     const handleRemovedPlayers = (player_id)=>{
 
         
-      console.log('Hello Remove...');
+      // console.log('Hello Remove...');
       const allSelectedPlayers= [...selectedPlayers];
-      console.log(allSelectedPlayers);
+      // console.log(allSelectedPlayers);
       const newSelectedPlayers= allSelectedPlayers.filter( player => player.player_id !== player_id );
       // setSelectedPlayers(newSelectedPlayers);
       setSelectedPlayers(newSelectedPlayers);
@@ -46,11 +68,11 @@ function App() {
 
   const handleCoin = (x) => {
     setCoin(coin + x);
-    console.log('Add coin:', x);
+    // console.log('Add coin:', x);
   }
   const handleReduceCoin = (x) =>{
     setCoin(coin - x);
-    console.log('Reduce coin:', x);
+    // console.log('Reduce coin:', x);
   }
 
   const handleIsAvailable = status => {
@@ -58,7 +80,7 @@ function App() {
       setAvailable(true);
       setSelected(false);
     }
-    console.log(status);
+    // console.log(status);
   }
   const handleIsSelected = status => {
     if (status) {
@@ -66,7 +88,7 @@ function App() {
       setSelected(true);
       setAvailable(false);
     }
-    console.log(status);
+    // console.log(status);
   }
 
   return (
