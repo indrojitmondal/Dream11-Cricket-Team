@@ -9,7 +9,7 @@ const Selected = ({selectedPlayers}) => {
         
     // }
     return (
-        <div className='grid grid-cols-1 gap-5 border border-gray-200 rounded-xl p-5'> 
+        <div className='grid grid-cols-1 gap-5 '> 
             {
                 selectedPlayers.map((player,idx)=> <SelectedPlayer key={idx} player={player} ></SelectedPlayer> )
             }
