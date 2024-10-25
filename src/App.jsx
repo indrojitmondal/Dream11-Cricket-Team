@@ -68,7 +68,7 @@ function App() {
         <div className='flex justify-between items-center'>
           <div>
             {
-              available ? <h2 className='text-2xl font-bold'>Available Players</h2> : <h2 className='text-2xl font-bold'>Selected Players</h2>
+              available ? <h2 className='text-2xl font-bold'>Available Players</h2> : <h2 className='text-2xl font-bold'>Selected Players {selectedPlayers.length}/6 </h2>
             }
           </div>
 
@@ -85,7 +85,7 @@ function App() {
               }}
 
 
-              className={`border border-gray-200 px-6 py-3 rounded-xl ${selected ? 'bg-credit' : 'bg-white'}`}>Selected(0)</button>
+              className={`border border-gray-200 px-6 py-3 rounded-xl ${selected ? 'bg-credit' : 'bg-white'}`}>Selected ({selectedPlayers.length})</button>
           </div>
         </div>
         <div className='mt-4'>
