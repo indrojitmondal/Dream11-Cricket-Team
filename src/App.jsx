@@ -109,6 +109,18 @@ function App() {
              handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected  handleRemovedPlayers={handleRemovedPlayers} selectedPlayers={selectedPlayers}></Selected>
           }
         </div>
+        <div className='mt-4'>
+          {
+             !available? <button
+              onClick={()=> {
+                setAvailable(true);
+                setSelected(false);
+              } 
+                } 
+              className='border border-add px-6 py-3 rounded-xl bg-credit '>Add More Player</button>  : ""
+          }
+
+        </div>
 
       </main>
 

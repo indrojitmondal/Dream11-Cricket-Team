@@ -15,6 +15,8 @@ export default {
         subscriber: 'rgba(19, 19, 19, 0.3)',
         b1:'rgb(255, 255, 255)',
         b2: 'rgba(19, 19, 19, 0.1)',
+        fb:'rgba(255, 255, 255, 0.15)',
+        add:'rgb(19, 19, 19)',
        
        
         
