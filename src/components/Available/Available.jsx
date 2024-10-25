@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AvailablePlayer from '../AvailablePlayer/AvailablePlayer';
 
-const Available = ({handleSelectedPlayers}) => {
+const Available = ({handleSelectedPlayers,coin}) => {
     const [availableData, setAvailableData] = useState([]);
     
   
@@ -18,7 +18,7 @@ const Available = ({handleSelectedPlayers}) => {
 
             {/* <h3>{availableData.length}</h3> */}
             {
-                availableData.map( (player,idx) => <AvailablePlayer
+                availableData.map( (player,idx) => <AvailablePlayer coin={coin}
                 handleSelectedPlayers={handleSelectedPlayers} 
                  key={idx} player={player} ></AvailablePlayer>)
             }

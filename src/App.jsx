@@ -86,7 +86,7 @@ function App() {
         </div>
         <div className='mt-4'>
           {
-            available ? <Available handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected selectedPlayers={selectedPlayers}></Selected>
+            available ? <Available coin={coin}  handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected selectedPlayers={selectedPlayers}></Selected>
           }
         </div>
 
