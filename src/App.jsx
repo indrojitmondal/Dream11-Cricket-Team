@@ -86,12 +86,12 @@ function App() {
             }
           </div>
 
-          <div className=' flex gap-5 items-center'>
+          <div className='border border-gray-200 rounded-xl'>
             <button
               onClick={() => {
                 handleIsAvailable(true);
               }}
-              className={`border border-gray-200 px-6 py-3 rounded-xl ${available ? 'bg-credit' : 'bg-white'}`}>Available</button>
+              className={` px-6 py-3  ${available ? 'bg-credit' : 'bg-white'}`}>Available</button>
             <button
 
               onClick={() => {
@@ -99,7 +99,7 @@ function App() {
               }}
 
 
-              className={`border border-gray-200 px-6 py-3 rounded-xl ${selected ? 'bg-credit' : 'bg-white'}`}>Selected ({selectedPlayers.length})</button>
+              className={` px-6 py-3  ${selected ? 'bg-credit' : 'bg-white'}`}>Selected ({selectedPlayers.length})</button>
           </div>
         </div>
         <div className='mt-4'>
