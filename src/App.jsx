@@ -31,6 +31,10 @@ function App() {
     setCoin(coin + x);
     console.log('Add coin:', x);
   }
+  const handleReduceCoin = (x) =>{
+    setCoin(coin - x);
+    console.log('Reduce coin:', x);
+  }
 
   const handleIsAvailable = status => {
     if (status) {
@@ -86,7 +90,9 @@ function App() {
         </div>
         <div className='mt-4'>
           {
-            available ? <Available coin={coin}  handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected selectedPlayers={selectedPlayers}></Selected>
+            available ? <Available coin={coin}  
+            handleReduceCoin={handleReduceCoin}
+             handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected selectedPlayers={selectedPlayers}></Selected>
           }
         </div>
 

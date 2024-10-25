@@ -23,6 +23,7 @@ const Banner = ({handleCoin}) => {
                         <button 
                          onClick={()=>{
                             handleCoin(1500000);
+                            alert(`Added 1500000`);
                          }}
                          className="bg-credit text-black px-4 py-2 rounded-xl">Claim Free Credit</button>
                     </div>
