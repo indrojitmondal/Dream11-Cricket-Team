@@ -3,7 +3,7 @@ import { CiFlag1 } from "react-icons/ci";
 import { FaFlag } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 
-const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,availableCopyData}) => {
+const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,availableCopyData,selectedPlayers}) => {
     
 
    
@@ -37,11 +37,13 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
                 <button
                  onClick={
                     
-                    coin >=player.price && !player.selected_status?()=>{
+                    coin >=player.price && !player.selected_status && selectedPlayers.length<6?()=>{
                     handleSelectedPlayers(player);
                     player.selected_status=true;
                     handleReduceCoin(player.price);
-                    } : player.selected_status?()=> alert("player already selected"): ()=> alert("Please Add Coin")
+                    } : player.selected_status? 
+                    ()=> alert("player already selected"): selectedPlayers.length>=6? ()=>alert("6 player already selected"):
+                     ()=> alert("Please Add Coin")
 
     
                      

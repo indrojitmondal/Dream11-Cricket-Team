@@ -82,7 +82,7 @@ function App() {
         <div className='flex justify-between items-center'>
           <div>
             {
-              available ? <h2 className='text-2xl font-bold'>Available Players</h2> : <h2 className='text-2xl font-bold'>Selected Players {selectedPlayers.length}/6 </h2>
+              available ? <h2 className='text-2xl font-bold'>Available Players</h2> : <h2 className='text-2xl font-bold'>Selected Player ({selectedPlayers.length}/6) </h2>
             }
           </div>
 
@@ -105,7 +105,7 @@ function App() {
         <div className='mt-4'>
           {
             available ? <Available coin={coin}  
-            handleReduceCoin={handleReduceCoin}
+            handleReduceCoin={handleReduceCoin} selectedPlayers={selectedPlayers}
              handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected  handleRemovedPlayers={handleRemovedPlayers} selectedPlayers={selectedPlayers}></Selected>
           }
         </div>
