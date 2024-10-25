@@ -1,7 +1,7 @@
 import React from 'react';
 import SelectedPlayer from '../SelectedPlayer/SelectedPlayer';
 
-const Selected = ({selectedPlayers}) => {
+const Selected = ({selectedPlayers,handleRemovedPlayers}) => {
     console.log(selectedPlayers);
     // for (const player of selectedPlayers) {
 
@@ -11,7 +11,7 @@ const Selected = ({selectedPlayers}) => {
     return (
         <div className='grid grid-cols-1 gap-5 '> 
             {
-                selectedPlayers.map((player,idx)=> <SelectedPlayer key={idx} player={player} ></SelectedPlayer> )
+                selectedPlayers.map((player,idx)=> <SelectedPlayer key={idx} player={player} handleRemovedPlayers={handleRemovedPlayers}  ></SelectedPlayer> )
             }
             
         </div>

@@ -23,6 +23,20 @@ function App() {
       
 
     }
+
+    const handleRemovedPlayers = (player_id)=>{
+
+        
+      console.log('Hello Remove...');
+      const allSelectedPlayers= [...selectedPlayers];
+      console.log(allSelectedPlayers);
+      const newSelectedPlayers= allSelectedPlayers.filter( player => player.player_id !== player_id );
+      // setSelectedPlayers(newSelectedPlayers);
+      setSelectedPlayers(newSelectedPlayers);
+    
+
+  }
+    
   
 
   
@@ -92,7 +106,7 @@ function App() {
           {
             available ? <Available coin={coin}  
             handleReduceCoin={handleReduceCoin}
-             handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected selectedPlayers={selectedPlayers}></Selected>
+             handleSelectedPlayers={handleSelectedPlayers}></Available> : <Selected  handleRemovedPlayers={handleRemovedPlayers} selectedPlayers={selectedPlayers}></Selected>
           }
         </div>
 
