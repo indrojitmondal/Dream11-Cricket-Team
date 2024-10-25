@@ -1,138 +1,167 @@
 [
-    {
+  {
+      "player_id": 1,
       "name": "Virat Kohli",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/2.png",
       "role": "Batsman",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm medium",
-      "price": 1500000
-    },
-    {
+      "price": 1500000,
+      "selected_status": false
+  },
+  {
+      "player_id": 2,
       "name": "Rohit Sharma",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/6.png",
       "role": "Batsman",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm offbreak",
-      "price": 1200000
-    },
-    {
+      "price": 1200000,
+      "selected_status": false
+  },
+  {
+      "player_id": 3,
       "name": "Jasprit Bumrah",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/9.png",
       "role": "Bowler",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm fast",
-      "price": 1000000
-    },
-    {
+      "price": 1000000,
+      "selected_status": false
+  },
+  {
+      "player_id": 4,
       "name": "KL Rahul",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/19.png",
       "role": "Wicketkeeper Batsman",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm medium",
-      "price": 900000
-    },
-    {
+      "price": 900000,
+      "selected_status": false
+  },
+  {
+      "player_id": 5,
       "name": "Ravindra Jadeja",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/46.png",
       "role": "Allrounder",
       "batting_type": "Left-hand bat",
       "bowling_type": "Left-arm orthodox",
-      "price": 1100000
-    },
-    {
+      "price": 1100000,
+      "selected_status": false
+  },
+  {
+      "player_id": 6,
       "name": "Hardik Pandya",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/54.png",
       "role": "Allrounder",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm fast-medium",
-      "price": 950000
-    },
-    {
+      "price": 950000,
+      "selected_status": false
+  },
+  {
+      "player_id": 7,
       "name": "Shubman Gill",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/62.png",
       "role": "Batsman",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm offbreak",
-      "price": 850000
-    },
-    {
+      "price": 850000,
+      "selected_status": false
+  },
+  {
+      "player_id": 8,
       "name": "Suryakumar Yadav",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/174.png",
       "role": "Batsman",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm medium",
-      "price": 950000
-    },
-    {
+      "price": 950000,
+      "selected_status": false
+  },
+  {
+      "player_id": 9,
       "name": "Yuzvendra Chahal",
       "country": "India",
       "player_img": "https://www.iplbetonline.in/wp-content/uploads/2023/04/111-780x780.png",
       "role": "Bowler",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm leg break",
-      "price": 750000
-    },
-    {
+      "price": 750000,
+      "selected_status": false
+  },
+  {
+      "player_id": 10,
       "name": "Axar Patel",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/71.png",
       "role": "Allrounder",
       "batting_type": "Left-hand bat",
       "bowling_type": "Left-arm orthodox",
-      "price": 800000
-    },
-    {
+      "price": 800000,
+      "selected_status": false
+  },
+  {
+      "player_id": 11,
       "name": "Ruturaj Gaikwad",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/31.png",
       "role": "Batsman",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm offbreak",
-      "price": 650000
-    },
-    {
+      "price": 650000,
+      "selected_status": false
+  },
+  {
+      "player_id": 12,
       "name": "Mohammed Shami",
       "country": "India",
       "player_img": "https://www.gujarattitansipl.com/static-assets/images/players/28994.png?v=4.86",
       "role": "Bowler",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm fast-medium",
-      "price": 950000
-    },
-    {
+      "price": 950000,
+      "selected_status": false
+  },
+  {
+      "player_id": 13,
       "name": "Washington Sundar",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/20.png",
       "role": "Allrounder",
       "batting_type": "Left-hand bat",
       "bowling_type": "Right-arm offbreak",
-      "price": 700000
-    },
-    {
+      "price": 700000,
+      "selected_status": false
+  },
+  {
+      "player_id": 14,
       "name": "Sanju Samson",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/190.png",
       "role": "Wicketkeeper Batsman",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm medium",
-      "price": 750000
-    },
-    {
+      "price": 750000,
+      "selected_status": false
+  },
+  {
+      "player_id": 15,
       "name": "Deepak Chahar",
       "country": "India",
       "player_img": "https://documents.iplt20.com/ipl/IPLHeadshot2024/91.png",
       "role": "Bowler",
       "batting_type": "Right-hand bat",
       "bowling_type": "Right-arm medium-fast",
-      "price": 800000
-    }
-  ]
-  
+      "price": 800000,
+      "selected_status": false
+  }
+]
