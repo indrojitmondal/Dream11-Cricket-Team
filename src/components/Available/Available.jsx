@@ -14,7 +14,7 @@ const Available = () => {
 
             {/* <h3>{availableData.length}</h3> */}
             {
-                availableData.map( player => <AvailablePlayer player={player} ></AvailablePlayer>)
+                availableData.map( (player,idx) => <AvailablePlayer key={idx} player={player} ></AvailablePlayer>)
             }
             
         </div>
