@@ -1,14 +1,18 @@
 import React from 'react';
+import SelectedPlayer from '../SelectedPlayer/SelectedPlayer';
 
 const Selected = ({selectedPlayers}) => {
     console.log(selectedPlayers);
-    for (const player of selectedPlayers) {
+    // for (const player of selectedPlayers) {
 
-        console.log(player);
+    //     console.log(player);
         
-    }
+    // }
     return (
-        <div>
+        <div className='grid grid-cols-1 gap-5 border border-gray-200 rounded-xl p-5'> 
+            {
+                selectedPlayers.map((player,idx)=> <SelectedPlayer key={idx} player={player} ></SelectedPlayer> )
+            }
             
         </div>
     );
