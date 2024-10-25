@@ -86,12 +86,12 @@ function App() {
             }
           </div>
 
-          <div className='border border-gray-200 rounded-xl'>
+          <div className='border border-gray-200 rounded-xl '>
             <button
               onClick={() => {
                 handleIsAvailable(true);
               }}
-              className={` px-6 py-3  ${available ? 'bg-credit' : 'bg-white'}`}>Available</button>
+              className={`border border-gray-200 rounded-l-xl  px-6 py-3  ${available ? 'bg-credit' : 'bg-white'}`}>Available</button>
             <button
 
               onClick={() => {
@@ -99,7 +99,7 @@ function App() {
               }}
 
 
-              className={` px-6 py-3  ${selected ? 'bg-credit' : 'bg-white'}`}>Selected ({selectedPlayers.length})</button>
+              className={`border border-gray-200 rounded-r-xl px-6 py-3  ${selected ? 'bg-credit' : 'bg-white'}`}>Selected ({selectedPlayers.length})</button>
           </div>
         </div>
         <div className='mt-4'>
