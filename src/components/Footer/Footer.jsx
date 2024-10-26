@@ -4,10 +4,18 @@ const Footer = () => {
     return (
         <>
    <footer className="mt-20 relative ">
-                {/* Upper section */}
-                <div className="upper border  border-white absolute z-50 rounded-xl  w-11/12 mx-auto top-0 left-0 right-0  px-4 pb-4 pr-4 ">
 
-                <div className=" rounded-xl bg-f1  footer_upper   ">
+              
+               {/* Upper section */}
+              
+             
+               
+                <div className="upper border  border-white absolute z-50 rounded-xl  w-11/12 mx-auto top-0 left-0 right-0  px-4 pb-4 pr-4 ">
+               
+                
+
+                
+                <div className=" border border-gray-300 rounded-xl bg-f1  footer_upper   ">
                    
                 <div className="p-12   text-center space-y-3">
                         <h6 className="text-3xl font-bold">Subscribe to our Newsletter</h6>
@@ -24,6 +32,7 @@ const Footer = () => {
                   
                   </div>
                 </div>
+            
                
 
                 {/* Downer section */}
@@ -84,6 +93,8 @@ const Footer = () => {
                     </footer>
 
                 </div>
+
+              
 
 
 
