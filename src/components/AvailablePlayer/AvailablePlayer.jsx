@@ -14,7 +14,7 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
         // toast("Please Add Coin")
            toast.info("Please Add Coin!", {
           position: "top-right",
-          autoClose: 3000, // Close after 3 seconds
+          autoClose: 2000, // Close after 3 seconds
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,

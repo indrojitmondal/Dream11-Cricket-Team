@@ -1,6 +1,21 @@
 import React from 'react';
 import './Footer.css'
+import {addToLS} from '../../loginExperience/localStorage'
+import { toast } from 'react-toastify';
 const Footer = () => {
+
+    const subscribe=()=> {
+        // toast("Please Add Coin")
+           toast.success("Congratulations! you subscribed successfully", {
+          position: "top-right",
+          autoClose: 2000, // Close after 3 seconds
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
     return (
         <>
    <footer className="mt-20 relative ">
@@ -21,8 +36,15 @@ const Footer = () => {
                         <h6 className="text-3xl font-bold">Subscribe to our Newsletter</h6>
                         <p className="text-xl font-medium">Get the latest updates and news right in your inbox!</p>
                         <div className=" flex  justify-center gap-4">
-                            <input type="text" placeholder="Enter your email" className="input-field" />
-                             <button className="gradient-button">Subscribe</button>
+                            <input type="text" id='mail' placeholder="Enter your email" className="input-field" />
+                             <button onClick={()=>{
+                                
+                                const email=`${mail.value}`;
+                                console.log(email);
+                               addToLS(email);
+                               subscribe();
+
+                             }} className="gradient-button">Subscribe</button>
                         </div>
                         
                         
