@@ -20,10 +20,13 @@ const Footer = () => {
                 <div className="p-12   text-center space-y-4">
                         <h6 className="text-3xl font-bold">Subscribe to our Newsletter</h6>
                         <p className="text-xl font-medium">Get the latest updates and news right in your inbox!</p>
-                        <div className="join flex justify-center gap-4">
-                            <input type="text" placeholder="Enter your email" className="input input-bordered" />
+                        <div className=" flex  justify-center gap-4">
+                            <input type="text" placeholder="Enter your email" className="input-field" />
                              <button className="gradient-button">Subscribe</button>
                         </div>
+                        
+                        
+
                 </div>
                 
                 
@@ -70,8 +73,8 @@ const Footer = () => {
                                     <h3 className='text-lg font-semibold'>Subscribe</h3>
                                     <p className=''>Subscribe to our newsletter for the latest updates.</p>
 
-                                    <div className="join  flex items-center gap-4">
-                                        <input type="text" placeholder="Enter your email" className="input input-bordered" />
+                                    <div className="  flex items-center gap-4">
+                                        <input type="text" placeholder="Enter your email" className="input text-black input-bordered" />
                                         <button className="gradient-button">Subscribe</button>
                                     </div>
 

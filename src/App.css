@@ -7,6 +7,16 @@
   cursor: pointer;
   border-radius: 12px;
 }
+.input-field{
+  /* background: linear-gradient(to right, #E28BAC, #F9C759); */
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid rgb(190, 187, 187);
+  outline: none;
+  /* cursor: pointer; */
+  border-radius: 12px;
+
+}
 .footer_upper{
    background: url(https://i.ibb.co.com/Yd86kpj/bg-shadow.png);
    background-size: cover;
