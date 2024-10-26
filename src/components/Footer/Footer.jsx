@@ -9,7 +9,7 @@ const Footer = () => {
 
                 <div className=" rounded-xl bg-f1  footer_upper   ">
                    
-                <div className="p-8   text-center space-y-3">
+                <div className="p-12   text-center space-y-3">
                         <h6 className="text-3xl font-bold">Subscribe to our Newsletter</h6>
                         <p className="text-xl font-medium">Get the latest updates and news right in your inbox!</p>
                         <div className="join flex justify-center gap-4">
@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="downer  top-20 absolute z-20 bg-black w-full">
                     <div className="text-white bg-white    w-11/12 mx-auto">
                         {/* start from here */}
-                        <div className='text-white pt-[180px] bg-black'>
+                        <div className='text-white pt-[190px] bg-black'>
 
                             <img className='mx-auto' src="https://i.ibb.co.com/bvvGH8G/logo-footer.png" alt="" />
 
