@@ -29,7 +29,7 @@ Here are 5 technologies I have used in this project:
 3. **DaisyUI**:
    - I have used some themes by it in player choice button and footer. 
 4. **ReactJS**:
-   - I have developed This project using React JSX by Vite tools. 
+   - I have developed this project using React JSX by Vite tools. 
 5. **Surge**:
    - I have deployed this project on surge.
 
