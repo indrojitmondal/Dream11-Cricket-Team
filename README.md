@@ -10,7 +10,7 @@
 
 ## Brief Description
 Dream 11 Cricket Team Maker is a web application for creating a team for premium tournament as for example, IPL, BPL etc. This website demo will be very helpful to make cricket team. The top key features are 'CREDIT ADDING', 'AVAILABLE, 'SELECTED', 'DELETED' functionalities that might be very helpful for a team manager. A player card includes player name, image, role and price. If card's don't have enough money, the player will not be selected. This demo projects exits only 15 fake data and player selection range is 1 to 6. If it crosses , no player will be selected and give an alert. If user delete a player from selected card, they can add again from the available card but remember that no multiple data will not be selected. If someone try to select or clicked twice , it will give an alert. After all, I hope that this website demo will be very helpful for creating a team by a team manager or leader or author. 
- 
+
 ## Top 3 Features
 Here are the top 3 key features of Dream11 Cricket Team:
 1. **Claim Free Credit**:
@@ -23,7 +23,7 @@ Here are the top 3 key features of Dream11 Cricket Team:
 ## Technologies Used
 Here are 5 technologies I have used in this project:
 1. **HTML**:
-   - I have used HTML5 tags like <main>, <footer>.
+   - I have used HTML5 tags like &ltmain&gt, &ltfooter&rt.
 2. **TailwindCSS**:
    - I have used the utility first css framework TailwindCSS in this project.
 3. **DaisyUI**:
