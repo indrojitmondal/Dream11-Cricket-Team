@@ -21,4 +21,4 @@ const getStoreEmail = ()=>{
      
  }
 
- export {addToLS}
+ export {addToLS,getStoreEmail,saveEmailToLS,}
