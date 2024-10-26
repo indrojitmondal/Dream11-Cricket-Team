@@ -23,7 +23,7 @@ Here are the top 3 key features of Dream11 Cricket Team:
 ## Technologies Used
 Here are 5 technologies I have used in this project:
 1. **HTML**:
-   - I have used HTML5 tags like <main>, <footer> etc.
+   - I have used HTML5 tags like &lt;main&gt;, &lt;footer&gt; etc.
 2. **TailwindCSS**:
    - I have used the utility first css framework TailwindCSS in this project.
 3. **DaisyUI**:
