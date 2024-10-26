@@ -42,6 +42,7 @@ const Footer = () => {
                                 const email=`${mail.value}`;
                                 console.log(email);
                                addToLS(email);
+                               mail.value='';
                                subscribe();
 
                              }} className="gradient-button">Subscribe</button>
@@ -96,8 +97,19 @@ const Footer = () => {
                                     <p className=''>Subscribe to our newsletter for the latest updates.</p>
 
                                     <div className="  flex items-center gap-4">
-                                        <input type="text" placeholder="Enter your email" className="input text-black input-bordered" />
-                                        <button className="gradient-button">Subscribe</button>
+                                        <input type="text" id='mail1' placeholder="Enter your email" className="input text-black input-bordered" />
+                                        <button
+                                          onClick={()=>{
+                                
+                                            const email=`${mail1.value}`;
+                                            console.log(email);
+                                           addToLS(email);
+
+                                           subscribe();
+                                           mail1.value='';
+            
+                                         }} 
+                                         className="gradient-button">Subscribe</button>
                                     </div>
 
 
