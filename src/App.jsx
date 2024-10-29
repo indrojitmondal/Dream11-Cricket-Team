@@ -96,7 +96,7 @@ function App() {
     <>
       <header className='w-11/12 mx-auto pt-4'>
 
-        <div className='fixed w-11/12 mx-auto pt-4 pb-4 top-0 z-50 bg-white'>
+        <div className='fixed w-11/12 mx-auto pt-4 pb-4  top-0 z-50 bg-white'>
           <Navbar coin={coin}></Navbar>
         </div>
 
@@ -112,12 +112,12 @@ function App() {
             }
           </div>
 
-          <div className='border border-gray-200 rounded-xl '>
+          <div className='border flex flex-col gap-3 md:block p-3 md:p-0 text-center md:text-left border-gray-200 rounded-xl '>
             <button
               onClick={() => {
                 handleIsAvailable(true);
               }}
-              className={`border border-gray-200 rounded-l-xl  px-6 py-3  ${available ? 'bg-credit' : 'bg-white'}`}>Available</button>
+              className={`border border-gray-200 rounded-l-xl px-3  md:px-6 py-3  ${available ? 'bg-credit' : 'bg-white'}`}>Available</button>
             <button
 
               onClick={() => {
@@ -125,7 +125,7 @@ function App() {
               }}
 
 
-              className={`border border-gray-200 rounded-r-xl px-6 py-3  ${selected ? 'bg-credit' : 'bg-white'}`}>Selected ({selectedPlayers.length})</button>
+              className={`border border-gray-200 rounded-r-xl px-3  md:px-6 py-3  ${selected ? 'bg-credit' : 'bg-white'}`}>Selected ({selectedPlayers.length})</button>
           </div>
         </div>
         <div className='mt-4'>
@@ -150,9 +150,9 @@ function App() {
 
       </main>
 
-      <Footer></Footer>
+      <Footer></Footer> 
 
-      <ToastContainer />
+       <ToastContainer />
 
       
 

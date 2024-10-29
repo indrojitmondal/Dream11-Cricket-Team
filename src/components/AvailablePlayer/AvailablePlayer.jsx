@@ -3,6 +3,7 @@ import { CiFlag1 } from "react-icons/ci";
 import { FaFlag } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { toast } from 'react-toastify';
+import { RiQqLine } from 'react-icons/ri';
 
 const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,availableCopyData,selectedPlayers}) => {
     
@@ -12,51 +13,109 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
     // console.log('Coin: ',coin,'Price: ',price);
     function addCoin() {
         // toast("Please Add Coin")
-           toast.info("Please Add Coin!", {
-          position: "top-right",
+        
+        window.innerWidth < 768 ?  toast.info("Please Add Coin!", {
+          position: 'bottom-center',
+        // position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+            
           autoClose: 2000, // Close after 3 seconds
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-        });
+        }): 
+        toast.info("Please Add Coin!", {
+            position: 'top-right',
+           
+            autoClose: 2000, // Close after 3 seconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          })
+
       }
       function allReadySelected() {
        
-           toast.warn("The player already selected!", {
-          position: "top-right",
-          autoClose: 2000, // Close after 3 seconds
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
+        //    toast.warn("The player already selected!", {
+            window.innerWidth < 768 ?  toast.warn("The player already selected!", {
+                position: 'bottom-center',
+              // position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+                  
+                autoClose: 2000, // Close after 3 seconds
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              }): 
+              toast.info("Please Add Coin!", {
+                  position: 'top-right',
+                 
+                  autoClose: 2000, // Close after 3 seconds
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                })
       }
       function allPlayerSelected() {
-       
-        toast.warn("Total 6 player is already selected!", {
-       position: "top-right",
-       autoClose: 2000, // Close after 3 seconds
-       hideProgressBar: false,
-       closeOnClick: true,
-       pauseOnHover: true,
-       draggable: true,
-       progress: undefined,
-     });
+
+        indow.innerWidth < 768 ? 
+        toast.warn("Total 6 player is already selected!",{
+            position: 'bottom-center',
+            // position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+                
+              autoClose: 2000, // Close after 3 seconds
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            }): 
+            toast.info("Please Add Coin!", {
+                position: 'top-right',
+               
+                autoClose: 2000, // Close after 3 seconds
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              })
+
+        
      }
      function success() {
+
+        // toast.success("Congratulations! The total 6 player is selected.",
        
-        toast.success("Congratulations! The total 6 player is selected.", {
-       position: "top-right",
-       autoClose: 2000, // Close after 3 seconds
-       hideProgressBar: false,
-       closeOnClick: true,
-       pauseOnHover: true,
-       draggable: true,
-       progress: undefined,
-     });
+        indow.innerWidth < 768 ? 
+        toast.success("Congratulations! The total 6 player is selected.",{
+            position: 'bottom-center',
+            // position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+                
+              autoClose: 2000, // Close after 3 seconds
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            }): 
+            toast.info("Please Add Coin!", {
+                position: 'top-right',
+               
+                autoClose: 2000, // Close after 3 seconds
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              })
+    
      }
     
     return (

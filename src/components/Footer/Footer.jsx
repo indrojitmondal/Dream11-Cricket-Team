@@ -8,7 +8,8 @@ const Footer = () => {
     const subscribe = () => {
         // toast("Please Add Coin")
         toast.success("Congratulations! you subscribed successfully", {
-            position: "top-right",
+            position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+            
             autoClose: 2000, // Close after 3 seconds
             hideProgressBar: false,
             closeOnClick: true,
@@ -22,7 +23,8 @@ const Footer = () => {
     const alreadySubscribe = () => {
         // toast("Please Add Coin")
         toast.info("You already subscribed!", {
-            position: "top-right",
+            position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+            
             autoClose: 2000, // Close after 3 seconds
             hideProgressBar: false,
             closeOnClick: true,
@@ -52,7 +54,7 @@ const Footer = () => {
                         <div className="p-12   text-center space-y-4">
                             <h6 className="text-3xl font-bold">Subscribe to our Newsletter</h6>
                             <p className="text-xl font-medium">Get the latest updates and news right in your inbox!</p>
-                            <div className=" flex  justify-center gap-4">
+                            <div className=" flex  flex-col md:flex-row  md:justify-center gap-4">
                                 <input type="text" id='mail' placeholder="Enter your email" className="input-field" />
                                 <button onClick={() => {
 
@@ -94,10 +96,10 @@ const Footer = () => {
                         {/* start from here */}
                         <div className='text-white pt-[260px] bg-black'>
 
-                            <img className='mx-auto' src="https://i.ibb.co.com/bvvGH8G/logo-footer.png" alt="" />
+                            <img className='mx-auto mt-36 md:mt-0' src="https://i.ibb.co.com/bvvGH8G/logo-footer.png" alt="" />
 
 
-                            <div className='mt-5 grid grid-cols-3 gap-5 align-top pb-8'>
+                            <div className='mt-5 grid grid-cols-1 md:grid-cols-3 gap-5 align-top pb-8'>
                                 <div className="about space-y-3">
 
                                     <h3 className='text-lg font-semibold'>About</h3>

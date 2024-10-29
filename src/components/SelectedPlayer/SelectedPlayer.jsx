@@ -5,9 +5,9 @@ const SelectedPlayer = ({ player,handleRemovedPlayers }) => {
     // console.log('Ok:', player);
     const { player_img, name, role, price,batting_type,bowling_type } = player;
     return (
-        <div className=' flex justify-between   border border-gray-200 rounded-xl p-5'>
+        <div className=' flex  justify-between   border border-gray-200 rounded-xl p-5'>
 
-            <div className='border flex gap-5  border-gray-200 rounded-xl p-5'>
+            <div className='border flex flex-col md:flex-row gap-5  border-gray-200 rounded-xl p-5'>
                 <div className='flex justify-start mb-3'>
                     <img className='w-[200px] bg-player rounded-xl' src={player_img} alt="" />
                 </div>

@@ -26,3 +26,25 @@
    /* border: 2px solid white; */
    
 }
+
+/* Default styles */
+.Toastify__toast-container {
+  width: auto; /* Adjust width based on your needs */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .Toastify__toast-container--bottom-center {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Larger screen styles */
+@media (min-width: 768px) {
+  .Toastify__toast-container--top-right {
+    top: 20px;
+    right: 20px;
+  }
+}
