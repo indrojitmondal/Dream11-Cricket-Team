@@ -51,7 +51,7 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
                 draggable: true,
                 progress: undefined,
               }): 
-              toast.info("Please Add Coin!", {
+              toast.warn("The player already selected!", {
                   position: 'top-right',
                  
                   autoClose: 2000, // Close after 3 seconds
@@ -65,7 +65,7 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
       function allPlayerSelected() {
 
         indow.innerWidth < 768 ? 
-        toast.warn("Total 6 player is already selected!",{
+         toast.warn("Total 6 player is already selected!",{
             position: 'bottom-center',
             // position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
                 
@@ -76,7 +76,7 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
               draggable: true,
               progress: undefined,
             }): 
-            toast.info("Please Add Coin!", {
+            toast.warn("Total 6 player is already selected!", {
                 position: 'top-right',
                
                 autoClose: 2000, // Close after 3 seconds
@@ -105,7 +105,7 @@ const AvailablePlayer = ({player,handleSelectedPlayers,coin,handleReduceCoin,ava
               draggable: true,
               progress: undefined,
             }): 
-            toast.info("Please Add Coin!", {
+            toast.success("Congratulations! The total 6 player is selected.", {
                 position: 'top-right',
                
                 autoClose: 2000, // Close after 3 seconds

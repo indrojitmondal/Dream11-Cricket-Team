@@ -7,8 +7,9 @@ const Footer = () => {
 
     const subscribe = () => {
         // toast("Please Add Coin")
+        position: window.innerWidth < 768 ?
         toast.success("Congratulations! you subscribed successfully", {
-            position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+             position:'top-center',
             
             autoClose: 2000, // Close after 3 seconds
             hideProgressBar: false,
@@ -16,14 +17,26 @@ const Footer = () => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-        });
+        }): 
+        toast.success("Congratulations! you subscribed successfully", {
+            position:'top-right',
+           
+           autoClose: 2000, // Close after 3 seconds
+           hideProgressBar: false,
+           closeOnClick: true,
+           pauseOnHover: true,
+           draggable: true,
+           progress: undefined,
+       })
+
     }
 
 
     const alreadySubscribe = () => {
         // toast("Please Add Coin")
+        position: window.innerWidth < 768 ?
         toast.info("You already subscribed!", {
-            position: window.innerWidth < 768 ? toast.POSITION.BOTTOM_CENTER : toast.POSITION.TOP_RIGHT,
+             position: 'top-center',
             
             autoClose: 2000, // Close after 3 seconds
             hideProgressBar: false,
@@ -31,7 +44,19 @@ const Footer = () => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-        });
+        }): 
+        toast.info("You already subscribed!", {
+            position: 'top-right',
+           
+           autoClose: 2000, // Close after 3 seconds
+           hideProgressBar: false,
+           closeOnClick: true,
+           pauseOnHover: true,
+           draggable: true,
+           progress: undefined,
+       })
+
+
     }
 
 
